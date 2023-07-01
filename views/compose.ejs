@@ -1,35 +1,28 @@
 <%- include("partials/header") -%>
 <h1>Compose</h1>
-<hr>
-<form action="/compose" method="post">
-  <!--  -->
-  <div class="form-group">
-    <label for="title">Title</label>
-    <hr>
-    <input
-      type="text"
-      class="form-control"
-      id="title"
-      placeholder="Post Title"
-      name="postTitle" />
+<hr />
+
+<div class="post-container">
+  <div class="wrapper">
+    <section class="post">
+      <header>New Post</header>
+      <form action="/compose" method="post">
+        <input
+          placeholder="post title"
+          spellcheck="false"
+          name="postTitle"
+          required />
+        <textarea
+          placeholder="What's on your mind, CodeWithNepal?"
+          spellcheck="false"
+          name="postContent"
+          required></textarea>
+        <button>Post</button>
+      </form>
+    </section>
   </div>
-  <!--  -->
-  <div class="form-group">
-    <label for="post-content">Post</label>
-    <hr>
-    <textarea
-      name="postContent"
-      class="form-control"
-      id="post-content"
-      rows="5"
-      placeholder="Post Content"></textarea>
-  </div>
-  <!--  -->
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <button type="submit" class="btn btn-primary">Publish</button>
-    </div>
-  </div>
-</form>
+</div>
+
+
 
 <%- include("partials/footer") -%>
