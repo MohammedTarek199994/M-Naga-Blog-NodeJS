@@ -1,0 +1,45 @@
+<%- include("partials/header") -%>
+<h1>Home Page</h1>
+<hr />
+<p>
+  Welcome to Mohammed Tarek Blog
+</p>
+<br />
+<hr />
+<h1 style="font-size: 40px">Posts</h1>
+<hr />
+<% posts.forEach(function(post, index) { %>
+<div class="panel panel-info">
+  <div class="panel-heading fs-6">
+    <p >
+      <%= post.title %>
+    </p>
+  </div>
+  <form action="/delete" method="post">
+  <div class="panel-body">
+    <p  class="post-p">
+      <%= post.content + "..." %>
+      <!-- .substring(0,100) -->
+  
+      <a href="/posts/<%= post.title %>" class="badge"> Read More </a>
+    </p>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button
+          type="submit"
+          value="<%=post._id %>"
+          class="btn btn-danger mt-3"
+          name="postId">
+          Delete Post
+        </button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+<% }); %>
+<!-- ------------------------------------------------------------ -->
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,29 @@
+<%- include("partials/header") -%>
+<br />
+<hr />
+<h1 style="font-size: 40px">Posts</h1>
+<hr />
+<form action="/delete" method="post">
+  <div class="panel panel-info">
+    <div class="panel-heading fs-6">
+      <p style="font-size: 20px; margin: 0px; text-align: center">
+        <%= postTitle %>
+      </p>
+    </div>
+    <div class="panel-body">
+      <p id="post-content" class="post-p"><%= postContent %></p>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button
+            type="submit"
+            value="<%=postId %>"
+            class="btn btn-danger mt-3"
+            name="postId">
+            Delete Post
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<%- include("partials/footer") -%>
