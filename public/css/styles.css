@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#0037ac, #1686fe);
+  background: linear-gradient(#ffffff, #a0a0a0);
 }
 .container {
   display: flex;
@@ -74,7 +74,7 @@ li a {
   justify-content: center;
 }
 .btn {
-  width: 90%;
+  width: 50%;
   padding: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -94,7 +94,7 @@ label {
 }
 
 h1 {
-  color: #efefef;
+  color: #000000;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -103,7 +103,7 @@ ul li {
   list-style: circle;
   padding: 5px;
   font-size: 20px;
-  color: wheat;
+  color: rgb(58, 58, 58);
   margin-top: 20px;
 }
 
@@ -130,13 +130,13 @@ hr {
 
 .container-column > p {
   font-size: 32px;
-  color: rgb(210, 210, 210);
+  color: rgb(74, 74, 74);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-top: 20px;
 }
 p.about {
   font-size: 25px;
-  color: rgb(210, 210, 210);
+  color: rgb(49, 49, 49);
   margin: 15px;
   text-decoration: none;
 }
@@ -254,7 +254,7 @@ p.post-p {
   font-size: 25px;
   margin-top: 30px;
   min-height: 100px;
-  color: rgb(145, 31, 31);
+  color: rgb(85, 19, 19);
 }
 
 .post-container .wrapper {
@@ -314,10 +314,10 @@ form button {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: #bcc0c4;
+  color: #d3d8dd;
   cursor: no-drop;
   border-radius: 7px;
-  background: #e2e5e9;
+  background: #afb1b4;
   transition: all 0.3s ease;
 }
 form textarea:valid ~ button {
