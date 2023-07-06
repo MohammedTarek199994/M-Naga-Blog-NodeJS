@@ -15,8 +15,8 @@ body {
   width: 90%;
   margin: auto;
 }
-#logo{
-  height: 45px;
+#logo {
+  height: 55px;
 }
 .navbar {
   padding-top: 5px;
@@ -38,7 +38,7 @@ body {
 li a {
   color: antiquewhite !important;
   /* padding: 10px !important; */
-  font-size: 18px !important;
+  font-size: 22px !important;
 }
 @media (max-width: 990px) {
   .navbar-nav li {
@@ -47,6 +47,7 @@ li a {
     margin-bottom: 20px;
     padding: 25px;
     list-style-type: none;
+    font-size: 25px;
   }
 }
 .navbar-nav li a:hover {
@@ -94,7 +95,7 @@ ul li {
   list-style: circle;
   padding: 5px;
   font-size: 20px;
-  color: brown; 
+  color: brown;
   margin-top: 20px;
 }
 h1 {
@@ -109,7 +110,7 @@ hr {
   margin: 20px 0px 20px 0px;
   border: none;
 }
-a{
+a {
   text-decoration: none;
 }
 /* ---------------------------------------------------------- */

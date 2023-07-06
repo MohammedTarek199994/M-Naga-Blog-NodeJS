@@ -1,9 +1,8 @@
 <%- include("partials/header") -%>
 <br />
 <hr />
-<h1 style="font-size: 40px">Posts11</h1>
+<h1 style="font-size: 40px">Posts</h1>
 <hr />
-
 <!-- ------------------------------------------------------------ -->
 <% posts.forEach(function(post, index) { %>
   <form action="/delete" method="post">
@@ -28,11 +27,8 @@
         </div>
       </div>
     </form>
-    
     </section>
   </div>
 </div>
 <% }); %>
-
-
 <%- include("partials/footer") -%>
