@@ -13,24 +13,26 @@
     <section class="post">
       <header>   <%= post.title %></header>
       <p><%= post.content.substring(0,200) + "..." %>
-        
-    
-        <a href="/posts/<%= post.title %>" class="badge"> Read More </a></p>
+       
+        <a href="/posts/<%= post.title %>" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Read More</a>
       <div class="row">
         <div class="col-md-12 text-center">
           <button
+            class="btn btn-danger"
             type="submit"
             value="<%=post._id %>"
             class="btn btn-danger mt-3"
             name="postId">
-            Delete Post
+            Delete
           </button>
         </div>
       </div>
     </form>
+    
     </section>
   </div>
 </div>
 <% }); %>
+
 
 <%- include("partials/footer") -%>
