@@ -1,5 +1,4 @@
 //jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -73,13 +72,13 @@ app.get("/posts/:postTitle", (req, res) => {
         res.render("post", {
           postTitle: "No post",
           postContent: "Sorry no post published with this title",
-          postId : -1
+          postId: -1,
         });
       } else {
         res.render("post", {
           postTitle: foundPost.title,
           postContent: foundPost.content,
-          postId : foundPost.id
+          postId: foundPost.id,
         });
       }
     })
