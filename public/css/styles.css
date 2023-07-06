@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#ffffff, #a0a0a0);
+  background: linear-gradient(#ffffff, #e4e4e4);
 }
 .container {
   display: flex;
@@ -15,13 +15,12 @@ body {
   width: 90%;
   margin: auto;
 }
-.container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
+#logo{
+  height: 45px;
 }
 .navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
@@ -29,39 +28,42 @@ body {
   letter-spacing: 2px;
   background-color: black;
 }
-
-.navbar-brand {
-  color: antiquewhite !important;
-  font-size: 30px;
+.navbar-nav li {
+  padding: 0px;
   margin: 0px;
+  margin-right: 35px;
+  margin-left: 60px;
+  list-style-type: none;
 }
 li a {
   color: antiquewhite !important;
+  /* padding: 10px !important; */
+  font-size: 18px !important;
 }
-.navbar-nav li {
-  margin: 0px 15px;
+@media (max-width: 990px) {
+  .navbar-nav li {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+    list-style-type: none;
+  }
 }
 .navbar-nav li a:hover {
   color: #b6bebd !important;
 }
-
+/* Footer  */
 .footer-padding {
-  /* padding-bottom: 20px; */
   height: 100vh;
 }
-
 .footer {
-  /* position: absolute; */
   text-align: center;
   bottom: 0;
   width: 100%;
   height: 100%;
-  /* height: 60px; */
   background-color: #365500;
 }
-
 .footer p {
-  /* margin-top: 25px; */
   margin: 0;
   font-size: 20px;
   padding: 15px;
@@ -74,164 +76,41 @@ li a {
   justify-content: center;
 }
 .btn {
-  width: 50%;
-  padding: 15px;
+  width: 70%;
+  padding: 0px;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 20px;
-  z-index: 2;
+  background-color: brown;
 }
-label {
-  font-size: 30px;
+p.about {
+  font-size: 25px;
+  color: brown;
+  margin: 15px;
+  text-decoration: none;
+}
+ul li {
+  list-style: circle;
+  padding: 5px;
+  font-size: 20px;
+  color: brown; 
   margin-top: 20px;
-  margin-bottom: 5px;
-  /* padding: px; */
-  color: rgb(214, 220, 198);
-  text-align: center;
-  /* background: rgb(0, 0, 0); */
-  width: 100%;
 }
-
 h1 {
   color: #000000;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 700;
 }
-ul li {
-  list-style: circle;
-  padding: 5px;
-  font-size: 20px;
-  color: rgb(58, 58, 58);
-  margin-top: 20px;
-}
-
 hr {
   background-color: rgb(16, 16, 16);
   height: 3px;
   margin: 20px 0px 20px 0px;
   border: none;
 }
-#title {
-  border-radius: 15px;
-  padding: 25px;
-  border: none;
-}
-#post-content {
-  border-radius: 15px;
-  border: none;
-}
-/* [placeholder] {
-  color: wheat;
-  background-color: black;
-  font-size: 20px;
-} */
-
-.container-column > p {
-  font-size: 32px;
-  color: rgb(74, 74, 74);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-top: 20px;
-}
-p.about {
-  font-size: 25px;
-  color: rgb(49, 49, 49);
-  margin: 15px;
+a{
   text-decoration: none;
-}
-/* Castum style for panel post  */
-.panel-info > .panel-heading {
-  background-color: rgb(0, 0, 0);
-}
-.panel-heading > p {
-  font-size: 25px;
-  margin: 0px;
-  text-align: center;
-  color: antiquewhite;
-}
-.panel {
-  margin-top: 50px;
-  width: 100%;
-}
-p.post-p {
-  margin: 0;
-  font-size: 20px;
-  color: #250329;
-}
-.badge {
-  background-color: #365500;
-}
-/* custom nav --------------------------------------------------------*/
-.custom-navbar {
-  display: flex;
-  flex-direction: row; /* Updated to display items in a column */
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: black; /* Updated to black background */
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 20px;
-  cursor: pointer;
-  margin: 30px;
-}
-
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
-}
-
-.menu {
-  display: none;
-  list-style: none;
-  top: 102px;
-  background-color: #00335a;
-  width: 80%;
-  height: 100%;
-  right: 5px;
-  text-align: center;
-  position: absolute;
-  z-index: 2; /* Adjust the z-index value to ensure it appears above other elements */
-}
-
-.menu li {
-  list-style: none !important;
-  font-size: 30px;
-  font-weight: 500;
-  padding-bottom: 50px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.menu.active {
-  display: flex;
-  flex-direction: column; /* Added to display items in a column */
-}
-
-.menu a {
-  text-decoration: none;
-  color: #fff; /* Updated text color to white */
-}
-/*  */
-.custom-navbar {
-  display: none;
-}
-/* ---------------------------------------------------------- */
-@media (max-width: 1065px) {
-  .custom-navbar {
-    display: flex;
-  }
-  .navbar {
-    display: none;
-  }
 }
 /* ---------------------------------------------------------- */
 /* Post design  */
@@ -252,8 +131,7 @@ p.post-p {
 }
 .post p {
   font-size: 25px;
-  margin-top: 30px;
-  min-height: 100px;
+  margin: 20px;
   color: rgb(85, 19, 19);
 }
 
@@ -261,6 +139,7 @@ p.post-p {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #000000;
 }
 .post-container .wrapper section {
   width: 95%;
@@ -277,6 +156,7 @@ p.post-p {
   padding: 17px 0;
   text-align: center;
   border-bottom: 1px solid #bfbfbf;
+  background-color: beige;
 }
 .post form {
   margin: 20px 25px;
@@ -310,21 +190,27 @@ form input:focus::placeholder {
 
 form button {
   height: 53px;
-  color: #fff;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   color: #d3d8dd;
   cursor: no-drop;
   border-radius: 7px;
-  background: #afb1b4;
+  background: #727375;
   transition: all 0.3s ease;
+  font-size: 29px;
 }
 form textarea:valid ~ button {
   color: #fff;
   cursor: pointer;
   background: #4267b2;
+  font-size: 29px;
 }
 form textarea:valid ~ button:hover {
-  background: #4267b2;
+  background: #0c42ae;
+  font-size: 30px;
 }
+body > div.container-column > form > div > div > section > p > a {
+  font-size: 15px;
+}
+/* -------------------------------------------------------------- */
