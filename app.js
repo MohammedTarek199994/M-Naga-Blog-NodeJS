@@ -8,7 +8,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-const port = 3000;
+const port = process.env.PORT || 3000;
 //----------------------------------------------------------------------
 mongoose.connect(
   "mongodb+srv://MohammedNaga:OJMZtR6xJeO6bzpt@cluster0.ieowrn3.mongodb.net/blogDB",
