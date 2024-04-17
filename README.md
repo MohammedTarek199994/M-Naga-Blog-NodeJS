@@ -1,4 +1,4 @@
- # M Naga Blog ||  
+# M Naga Blog ||  
 #### In this blog post, we will guide you through the process of creating a blogging platform using Express.js as the backend framework and MongoDB as the database. We'll utilize EJS (Embedded JavaScript) as the frontend template engine to render dynamic content.
 
 ## Home Page 👨‍💻 ::
